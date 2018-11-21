@@ -38,6 +38,28 @@ h1 {
     font-size: 34px;
 }
 
+.mdl-navigation .material-icons {
+    margin-right: 10px;
+}
+
+#home .mdl-button .material-icons {
+    margin-right: 10px;
+}
+
+div.button a {
+    min-width: 75%;
+}
+
+div.button {
+    margin-bottom: 10px;
+}
+
+#back {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
 /* Portrait layout (default) */
 .app {
     position:absolute;             /* position in the center of the screen */

@@ -23,6 +23,11 @@
             "label": "Ctrl+Shift+T",
             "isNative": true
         },
+        "workbench.action.openRecent": {
+            "id": "workbench.action.openRecent",
+            "label": "Ctrl+R",
+            "isNative": true
+        },
         "workbench.action.files.save": {
             "id": "workbench.action.files.save",
             "label": "Ctrl+S",
@@ -449,13 +454,17 @@
             "isNative": true
         }
     },
-    "pickerWorkingDir": "/home/benjamin/Projets/COFFEE_SVN",
+    "pickerWorkingDir": "/home/benjamin/Projets",
     "openedPathsList": {
         "workspaces2": [
+            "file:///home/benjamin/Projets/phone-testing-center-vuejs",
+            "file:///home/benjamin/Projets/cpp_zia",
             "file:///home/benjamin/Projets/COFFEE_SVN/www",
             "file:///home/benjamin/Projets/phone-testing-center"
         ],
-        "files2": []
+        "files2": [
+            "file:///home/benjamin/Projets/phone-testing-center/www/css/index.css"
+        ]
     },
     "windowsState": {
         "openedWindows": [],

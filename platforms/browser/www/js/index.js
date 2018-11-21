@@ -6,11 +6,10 @@ import Home from './home.vue';
 import Battery from './battery.vue';
 import Contacts from './contacts.vue';
 import Location from './location.vue';
-import Vibration from './vibration.vue';
+import Incremental from './incremental.vue';
 import Language from './language.vue';
 import Accelerometer from './accelerometer.vue';
 import Back from './back.vue';
-
 
 Vue.use(VueRouter);
 
@@ -19,7 +18,7 @@ const routes = [
   { path: '/battery', component: Battery },
   { path: '/contacts', component: Contacts },
   { path: '/location', component: Location },
-  { path: '/vibration', component: Vibration },
+  { path: '/incremental', component: Incremental },
   { path: '/language', component: Language },
   { path: '/accelerometer', component: Accelerometer },
   { path: '*', redirect: '/' }
@@ -37,7 +36,7 @@ const app = new Vue({
       Battery,
       Contacts,
       Location,
-      Vibration,
+      Incremental,
       Language,
       Accelerometer,
       Back

@@ -24,17 +24,3 @@
     }
   }
 </script>
-
-<style scoped>
-
-    a div {
-        margin-right: 20px;
-    }
-
-    a {
-        min-width: 75%;
-        margin-bottom: 10px;
-    }
-
-</style>
-

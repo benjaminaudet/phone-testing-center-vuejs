@@ -12,6 +12,10 @@
         </tr>
         </thead>
         <tbody>
+          <tr v-for="contact of contacts" v-if="contact.displayName && contact.phoneNumbers">
+            <td class="mdl-data-table__cell--non-numeric">{{contact.displayName.trim().split(' ')[0]}}</td>
+            <td class="mdl-data-table__cell--non-numeric">{{contact.phoneNumbers[0].value}}</td>
+          </tr>
         </tbody>
     </table>
     </div>
@@ -25,20 +29,23 @@
     components: {
       back
     },
-    onDeviceReady: function () {
-
+    methods: {
+      onSuccess: function(contacts) {
+        console.log(contacts)
+        this.contacts = contacts;
+      },
+      onDeviceReady: function () {
+        var fields = [navigator.contacts.fieldType.displayName, navigator.contacts.fieldType.phoneNumbers];
+        navigator.contacts.find(fields, this.onSuccess);
+      },
     },
     created: function() {
       document.addEventListener('deviceready', this.onDeviceReady, false);
     },
-    data: () => {
+    data: function() {
       return {
+        contacts: this.contacts
       }
     }
   }
 </script>
-
-<style scoped>
-
-</style>
-

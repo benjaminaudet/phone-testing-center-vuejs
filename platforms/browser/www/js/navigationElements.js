@@ -2,7 +2,7 @@ export default [
   {
     label: 'home',
     icon: 'home',
-    url: '',
+    url: '/#',
     global: true
   },
   {
@@ -24,21 +24,21 @@ export default [
     global: false
   },
   {
-    label: 'vibration',
-    icon: 'vibration',
-    url: 'vibration',
+    label: 'incremental',
+    icon: 'exposure_plus_1',
+    url: 'incremental',
     global: false
   },
-  {
-    label: 'language',
-    icon: 'language',
-    url: 'language',
-    global: false
-  },
-  {
-    label: 'accelerometer',
-    icon: 'compare_arrows',
-    url: 'accelerometer',
-    global: false
-  },
+  // {
+  //   label: 'language',
+  //   icon: 'language',
+  //   url: 'language',
+  //   global: false
+  // },
+  // {
+  //   label: 'accelerometer',
+  //   icon: 'compare_arrows',
+  //   url: 'accelerometer',
+  //   global: false
+  // },
 ]

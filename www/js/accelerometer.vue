@@ -20,9 +20,4 @@
   }
 </script>
 
-<style scoped>
-
-
-
-</style>
 
